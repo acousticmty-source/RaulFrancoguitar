@@ -431,7 +431,8 @@ a[aria-disabled="true"] {
 }
 
 .course-media {
-  margin: 34px 0 0;
+  width: min(100%, 360px);
+  margin: 34px auto 0;
 }
 
 .course-media img {
@@ -613,13 +614,13 @@ dd {
   }
 
   .section-course .split {
-    grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1.28fr);
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
     align-items: center;
-    gap: clamp(44px, 7vw, 92px);
+    gap: clamp(40px, 6vw, 76px);
   }
 
   .course-media {
-    margin: 0;
+    margin: 0 0 0 auto;
   }
 
   .form-grid {
