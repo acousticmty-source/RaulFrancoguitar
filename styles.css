@@ -255,8 +255,7 @@ h2 {
   margin: 0 auto;
 }
 
-.section-intro .section-inner,
-#curso .section-inner {
+.section-intro .section-inner {
   max-width: 760px;
 }
 
@@ -421,6 +420,25 @@ a[aria-disabled="true"] {
 
 .section-button {
   margin-top: 34px;
+}
+
+.section-course {
+  background: var(--color-white);
+}
+
+.section-course .section-inner {
+  max-width: var(--container);
+}
+
+.course-media {
+  margin: 34px 0 0;
+}
+
+.course-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-line);
 }
 
 .appearances,
@@ -592,6 +610,16 @@ dd {
   .split {
     grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
     align-items: start;
+  }
+
+  .section-course .split {
+    grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1.28fr);
+    align-items: center;
+    gap: clamp(44px, 7vw, 92px);
+  }
+
+  .course-media {
+    margin: 0;
   }
 
   .form-grid {
