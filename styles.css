@@ -287,107 +287,21 @@ h2 {
   gap: 28px;
 }
 
-.agenda-form {
-  display: grid;
-  gap: 16px;
-}
-
-.availability-list {
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
-  padding: 18px 0;
-}
-
-.availability-list p {
-  margin: 0 0 10px;
-  color: var(--color-gold);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.availability-list ul {
-  display: grid;
-  gap: 8px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.availability-list li {
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-
-.availability-list strong {
-  color: var(--color-ink);
-  font-weight: 700;
-}
-
-.agenda-form label {
-  display: grid;
-  gap: 8px;
-  color: var(--color-muted);
-  font-size: 0.74rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.agenda-form input,
-.agenda-form select,
-.agenda-form textarea {
-  width: 100%;
-  min-height: 46px;
-  padding: 12px 14px;
-  border: 1px solid var(--color-line);
-  border-radius: 0;
-  background: transparent;
-  color: var(--color-ink);
-  font: inherit;
-  text-transform: none;
-}
-
-.agenda-form textarea {
-  resize: vertical;
-}
-
-.form-grid {
-  display: grid;
-  gap: 16px;
-}
-
-.agenda-result {
+.simple-agenda {
   border-top: 1px solid var(--color-line);
   padding-top: 24px;
 }
 
-.agenda-result p {
+.simple-agenda p {
+  max-width: 440px;
   margin: 0;
-}
-
-.result-label {
-  color: var(--color-gold);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-[data-agenda-summary] {
-  margin-top: 10px !important;
   color: var(--color-muted);
-  font-family: var(--font-serif);
-  font-size: clamp(1.08rem, 3vw, 1.38rem);
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .result-actions {
   margin-top: 22px;
-}
-
-a[aria-disabled="true"] {
-  opacity: 0.42;
-  pointer-events: none;
 }
 
 .section-faq {
@@ -442,36 +356,10 @@ a[aria-disabled="true"] {
   border: 1px solid var(--color-line);
 }
 
-.appearances,
 .contact-list {
   list-style: none;
   padding: 0;
   margin: 38px 0 0;
-}
-
-.appearances li {
-  padding: 24px 0;
-  border-top: 0;
-  font-family: var(--font-serif);
-  font-size: clamp(1.16rem, 4vw, 2.2rem);
-  line-height: 1.15;
-}
-
-.appearances li:last-child {
-  border-bottom: 0;
-}
-
-.section-secondary {
-  background: var(--color-white);
-}
-
-.section-secondary h2 {
-  font-size: clamp(2.2rem, 7vw, 4.8rem);
-}
-
-.section-secondary .appearances {
-  max-width: 760px;
-  margin-top: 54px;
 }
 
 .split {

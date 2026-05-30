@@ -142,93 +142,24 @@
                 <dd>Citas de 60 min</dd>
               </div>
             </dl>
-            <p class="result-label">Agenda de clases</p>
-            <div class="availability-list" aria-label="Horarios reales disponibles">
-              <p>Horarios reales disponibles</p>
-              <ul>
-                <li><strong>Lunes</strong> 11:30 AM · 1:00 PM · 2:30 PM</li>
-                <li><strong>Martes</strong> 9:00 AM · 10:30 AM · 12:00 PM · 1:30 PM</li>
-                <li><strong>Miércoles</strong> 9:00 AM · 10:30 AM · 12:00 PM · 1:30 PM</li>
-                <li><strong>Jueves</strong> 9:00 AM · 10:30 AM · 1:30 PM</li>
-                <li><strong>Viernes</strong> 9:00 AM · 10:30 AM · 12:00 PM · 1:30 PM</li>
-              </ul>
-            </div>
-            <form class="agenda-form" data-agenda-form>
-              <label>
-                Nombre
-                <input type="text" name="name" placeholder="Tu nombre" required />
-              </label>
-
-              <label>
-                WhatsApp
-                <input type="tel" name="phone" placeholder="811 000 0000" />
-              </label>
-
-              <label>
-                Nivel
-                <select name="level">
-                  <option value="Principiante">Principiante</option>
-                  <option value="Intermedio">Intermedio</option>
-                  <option value="Avanzado">Avanzado</option>
-                  <option value="No estoy seguro">No estoy seguro</option>
-                </select>
-              </label>
-
-              <input type="hidden" name="service" value="Clases particulares" />
-
-              <label>
-                Día
-                <select name="day" data-day-select required>
-                  <option value="Lunes">Lunes</option>
-                  <option value="Martes">Martes</option>
-                  <option value="Miércoles">Miércoles</option>
-                  <option value="Jueves">Jueves</option>
-                  <option value="Viernes">Viernes</option>
-                </select>
-              </label>
-
-              <label>
-                Modalidad
-                <select name="mode">
-                  <option value="En línea">En línea</option>
-                  <option value="Presencial en Monterrey">Presencial en Monterrey</option>
-                  <option value="Por definir">Por definir</option>
-                </select>
-              </label>
-
-              <label>
-                Elige horario
-                <select name="slot" data-slot-select required></select>
-              </label>
-
-              <label>
-                Comentarios
-                <textarea
-                  name="notes"
-                  rows="4"
-                  placeholder="Nivel, modalidad ideal o duda principal."
-                ></textarea>
-              </label>
-
-              <button class="button" type="submit">Preparar mensaje</button>
-            </form>
-
-            <div class="agenda-result" data-agenda-result>
-              <p class="result-label">Solicitud lista</p>
-              <p data-agenda-summary>
-                Completa los datos para generar el mensaje automático.
+            <div class="simple-agenda">
+              <p>
+                Puedes pedir información por WhatsApp o revisar la agenda disponible.
               </p>
               <div class="action-row result-actions">
-                <a class="button" href="#" data-agenda-whatsapp aria-disabled="true">
-                  Abrir WhatsApp
+                <a
+                  class="button"
+                  href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20las%20clases%20particulares%20de%20guitarra%20flamenca.%20Quisiera%20saber%20disponibilidad%2C%20modalidades%20y%20c%C3%B3mo%20empezar."
+                  rel="noopener"
+                >
+                  Pedir información
                 </a>
                 <a
                   class="button button-ghost"
                   href="https://calendar.app.google/5mgn6u3DMZjyWAhR9"
-                  data-agenda-calendar
-                  aria-disabled="false"
+                  rel="noopener"
                 >
-                  Abrir agenda
+                  Ver agenda
                 </a>
               </div>
             </div>
@@ -255,7 +186,10 @@
             </details>
             <details>
               <summary>¿Cómo se confirma la clase?</summary>
-              <p>La clase se confirma por WhatsApp según disponibilidad de horario.</p>
+              <p>
+                Al reservar en la agenda, Google Calendar confirma automáticamente el horario y
+                envía los detalles de la cita.
+              </p>
             </details>
           </div>
         </div>
@@ -316,24 +250,9 @@
         </div>
       </section>
 
-      <section class="section section-secondary" id="presentaciones">
-        <div class="section-inner reveal">
-          <p class="section-kicker">07</p>
-          <h2>Presentaciones destacadas</h2>
-          <ul class="appearances" aria-label="Presentaciones destacadas">
-            <li>Festival Internacional Santa Lucía</li>
-            <li>Festival Internacional del Libro Monterrey</li>
-            <li>Festival Internacional de las Artes Julio Torri</li>
-            <li>Festival Alfonsino</li>
-            <li>San Pedro Art Fest</li>
-            <li>Festival del Desierto</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="section section-contact" id="contacto">
         <div class="section-inner reveal">
-          <p class="section-kicker">08</p>
+          <p class="section-kicker">07</p>
           <h2>Contacto</h2>
           <ul class="contact-list" aria-label="Canales de contacto">
             <li>
@@ -347,26 +266,10 @@
             </li>
             <li>
               <a
-                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20el%20enlace%20de%20Instagram%20de%20Ra%C3%BAl%20Franco."
-                data-contact="instagram"
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.tiktok.com/@raulfrancoguitar"
                 data-contact="tiktok"
               >
                 TikTok
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20un%20correo%20de%20contacto%20de%20Ra%C3%BAl%20Franco."
-                data-contact="email"
-              >
-                Correo
               </a>
             </li>
           </ul>
