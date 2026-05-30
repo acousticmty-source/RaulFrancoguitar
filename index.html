@@ -90,14 +90,6 @@
             >
               Ver en TikTok
             </a>
-            <a
-              class="button button-ghost"
-              href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20escuchar%20demos%20de%20Ra%C3%BAl%20Franco."
-              rel="noopener"
-              data-contact="demos"
-            >
-              Escuchar demos
-            </a>
           </div>
         </div>
       </section>
@@ -185,6 +177,17 @@
               <input type="hidden" name="service" value="Clases particulares" />
 
               <label>
+                Día
+                <select name="day" data-day-select required>
+                  <option value="Lunes">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miércoles">Miércoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                </select>
+              </label>
+
+              <label>
                 Modalidad
                 <select name="mode">
                   <option value="En línea">En línea</option>
@@ -195,36 +198,7 @@
 
               <label>
                 Elige horario
-                <select name="slot" required>
-                  <optgroup label="Lunes">
-                    <option value="Lunes 11:30 AM">11:30 AM</option>
-                    <option value="Lunes 1:00 PM">1:00 PM</option>
-                    <option value="Lunes 2:30 PM">2:30 PM</option>
-                  </optgroup>
-                  <optgroup label="Martes">
-                    <option value="Martes 9:00 AM">9:00 AM</option>
-                    <option value="Martes 10:30 AM">10:30 AM</option>
-                    <option value="Martes 12:00 PM">12:00 PM</option>
-                    <option value="Martes 1:30 PM">1:30 PM</option>
-                  </optgroup>
-                  <optgroup label="Miércoles">
-                    <option value="Miércoles 9:00 AM">9:00 AM</option>
-                    <option value="Miércoles 10:30 AM">10:30 AM</option>
-                    <option value="Miércoles 12:00 PM">12:00 PM</option>
-                    <option value="Miércoles 1:30 PM">1:30 PM</option>
-                  </optgroup>
-                  <optgroup label="Jueves">
-                    <option value="Jueves 9:00 AM">9:00 AM</option>
-                    <option value="Jueves 10:30 AM">10:30 AM</option>
-                    <option value="Jueves 1:30 PM">1:30 PM</option>
-                  </optgroup>
-                  <optgroup label="Viernes">
-                    <option value="Viernes 9:00 AM">9:00 AM</option>
-                    <option value="Viernes 10:30 AM">10:30 AM</option>
-                    <option value="Viernes 12:00 PM">12:00 PM</option>
-                    <option value="Viernes 1:30 PM">1:30 PM</option>
-                  </optgroup>
-                </select>
+                <select name="slot" data-slot-select required></select>
               </label>
 
               <label>
