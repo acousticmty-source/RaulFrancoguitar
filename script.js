@@ -8,6 +8,11 @@ const agendaWhatsapp = document.querySelector("[data-agenda-whatsapp]");
 const agendaCalendar = document.querySelector("[data-agenda-calendar]");
 const daySelect = document.querySelector("[data-day-select]");
 const slotSelect = document.querySelector("[data-slot-select]");
+const faqBotToggle = document.querySelector("[data-faq-bot-toggle]");
+const faqBotPanel = document.querySelector("[data-faq-bot] .faq-bot-panel");
+const faqBotClose = document.querySelector("[data-faq-bot-close]");
+const faqBotAnswer = document.querySelector("[data-faq-bot-answer]");
+const faqBotQuestions = document.querySelectorAll("[data-faq-question]");
 const whatsappNumber = "528116355035";
 const googleBookingLink = "https://calendar.app.google/5mgn6u3DMZjyWAhR9";
 const availableSlots = {
@@ -16,6 +21,20 @@ const availableSlots = {
   Miércoles: ["9:00 AM", "10:30 AM", "12:00 PM", "1:30 PM"],
   Jueves: ["9:00 AM", "10:30 AM", "1:30 PM"],
   Viernes: ["9:00 AM", "10:30 AM", "12:00 PM", "1:30 PM"],
+};
+const faqAnswers = {
+  clases:
+    "Las clases son presenciales en Monterrey o en línea. Son 4 sesiones mensuales, de una hora cada una.",
+  agenda:
+    "Puedes revisar la agenda disponible en la sección de Clases. Google Calendar confirma automáticamente el horario reservado.",
+  contratacion:
+    "Las presentaciones privadas son para eventos, restaurantes, experiencias gastronómicas, corporativos y celebraciones especiales.",
+  curso:
+    "Tu Sonido Flamenco es un curso online para guitarristas que quieren acercarse al lenguaje flamenco de forma práctica.",
+  guitarras:
+    "La sección de guitarras muestra instrumentos artesanales y proceso de construcción en taller. Puedes consultar por WhatsApp desde ahí.",
+  contacto:
+    "Puedes contactar por WhatsApp al 811 635 5035 o visitar TikTok como @raulfrancoguitar.",
 };
 
 function setHeaderState() {
@@ -108,6 +127,33 @@ if (daySelect) {
   renderSlots(daySelect.value);
   daySelect.addEventListener("change", () => renderSlots(daySelect.value));
 }
+
+function setFaqBotState(isOpen) {
+  if (!faqBotToggle || !faqBotPanel) {
+    return;
+  }
+
+  faqBotPanel.hidden = !isOpen;
+  faqBotToggle.setAttribute("aria-expanded", String(isOpen));
+}
+
+if (faqBotToggle && faqBotPanel) {
+  faqBotToggle.addEventListener("click", () => {
+    const isOpen = faqBotToggle.getAttribute("aria-expanded") === "true";
+    setFaqBotState(!isOpen);
+  });
+}
+
+if (faqBotClose) {
+  faqBotClose.addEventListener("click", () => setFaqBotState(false));
+}
+
+faqBotQuestions.forEach((button) => {
+  button.addEventListener("click", () => {
+    const answerKey = button.dataset.faqQuestion;
+    faqBotAnswer.textContent = faqAnswers[answerKey];
+  });
+});
 
 const revealObserver = new IntersectionObserver(
   (entries) => {

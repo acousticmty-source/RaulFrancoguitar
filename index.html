@@ -238,18 +238,53 @@
             </p>
             <a
               class="button section-button"
-              href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20informaci%C3%B3n%20sobre%20las%20guitarras."
-              rel="noopener"
+              href="#guitarras-artesanales"
             >
-              Consultar guitarras
+              Ver guitarras
             </a>
           </div>
         </div>
       </section>
 
-      <section class="section section-contact" id="contacto">
+      <section class="section section-guitar-gallery" id="guitarras-artesanales">
         <div class="section-inner reveal">
           <p class="section-kicker">07</p>
+          <h2>Guitarras artesanales</h2>
+          <p class="lead">
+            Una mirada al taller, a la madera y al proceso de construcción de guitarras flamencas
+            artesanales.
+          </p>
+          <div class="guitar-gallery" aria-label="Galería de guitarras artesanales">
+            <figure>
+              <img
+                src="assets/guitarras-detalles.png"
+                alt="Detalles en blanco y negro de roseta y cuerpo de guitarra flamenca"
+                loading="lazy"
+              />
+              <figcaption>Detalles</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/guitarras-proceso.png"
+                alt="Proceso de construcción de guitarra flamenca en taller de laudero"
+                loading="lazy"
+              />
+              <figcaption>Proceso</figcaption>
+            </figure>
+          </div>
+          <a
+            class="button section-button"
+            href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20informaci%C3%B3n%20sobre%20las%20guitarras%20artesanales."
+            rel="noopener"
+          >
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contacto">
+        <div class="section-inner reveal">
+          <p class="section-kicker">08</p>
           <h2>Contacto</h2>
           <ul class="contact-list" aria-label="Canales de contacto">
             <li>
@@ -285,6 +320,42 @@
     >
       WhatsApp
     </a>
+
+    <section class="faq-bot" data-faq-bot aria-label="Bot de preguntas frecuentes">
+      <button
+        class="faq-bot-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="faq-bot-panel"
+        data-faq-bot-toggle
+      >
+        Preguntas
+      </button>
+      <div class="faq-bot-panel" id="faq-bot-panel" hidden>
+        <div class="faq-bot-header">
+          <p>Asistente</p>
+          <button type="button" aria-label="Cerrar asistente" data-faq-bot-close>Cerrar</button>
+        </div>
+        <div class="faq-bot-answer" data-faq-bot-answer>
+          Elige una pregunta para recibir una respuesta rápida.
+        </div>
+        <div class="faq-bot-options" aria-label="Preguntas disponibles">
+          <button type="button" data-faq-question="clases">Clases</button>
+          <button type="button" data-faq-question="agenda">Agenda</button>
+          <button type="button" data-faq-question="contratacion">Contratación</button>
+          <button type="button" data-faq-question="curso">Curso</button>
+          <button type="button" data-faq-question="guitarras">Guitarras</button>
+          <button type="button" data-faq-question="contacto">Contacto</button>
+        </div>
+        <a
+          class="faq-bot-link"
+          href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%2C%20tengo%20una%20pregunta%20sobre%20Ra%C3%BAl%20Franco."
+          rel="noopener"
+        >
+          Preguntar por WhatsApp
+        </a>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
