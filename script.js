@@ -34,7 +34,10 @@ const translations = {
     "lessons.scheduleLabel": "Horarios",
     "lessons.scheduleValue": "Horarios matutinos",
     "lessons.note": "Puedes adquirir la suscripción o revisar la agenda disponible.",
+    "lessons.registrationNote":
+      "Después de adquirir tu suscripción, recibirás instrucciones para completar tu registro y asignar horario.",
     "lessons.subscribe": "Adquirir suscripción",
+    "lessons.registration": "Completar registro",
     "lessons.calendar": "Ver agenda",
     "faq.title": "Preguntas frecuentes",
     "faq.experienceQ": "¿Necesito experiencia previa?",
@@ -91,7 +94,10 @@ const translations = {
     "lessons.scheduleLabel": "Schedule",
     "lessons.scheduleValue": "Morning availability",
     "lessons.note": "You can purchase the subscription or review the available calendar.",
+    "lessons.registrationNote":
+      "After purchasing your subscription, you will receive instructions to complete your registration and assign a schedule.",
     "lessons.subscribe": "Purchase subscription",
+    "lessons.registration": "Complete registration",
     "lessons.calendar": "View calendar",
     "faq.title": "Frequently Asked Questions",
     "faq.experienceQ": "Do I need previous experience?",
@@ -183,6 +189,18 @@ function downloadVcard(event) {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+}
+
+function consultarDisponibilidad() {
+  // Placeholder para futura consulta de disponibilidad en Google Calendar.
+}
+
+function asignarHorario() {
+  // Placeholder para futura asignación automática de horario.
+}
+
+function crearEventoRecurrente() {
+  // Placeholder para futura creación de clases semanales recurrentes.
 }
 
 menuToggle.addEventListener("click", () => {
