@@ -20,7 +20,7 @@ const translations = {
     "hero.courses": "Cursos",
     "hero.instruments": "Instrumentos",
     "music.title": "Música",
-    "music.button": "Escuchar",
+    "music.button": "Videos",
     "bookings.title": "Contrataciones",
     "bookings.text":
       "Guitarra flamenca para eventos privados, restaurantes, experiencias gastronómicas, corporativos y celebraciones especiales.",
@@ -77,7 +77,7 @@ const translations = {
     "hero.courses": "Courses",
     "hero.instruments": "Instruments",
     "music.title": "Music",
-    "music.button": "Listen",
+    "music.button": "Videos",
     "bookings.title": "Bookings",
     "bookings.text":
       "Flamenco guitar for private events, restaurants, culinary experiences, corporate gatherings and special celebrations.",
