@@ -82,6 +82,32 @@ a {
   white-space: nowrap;
 }
 
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-select {
+  min-height: 34px;
+  max-width: 118px;
+  padding: 0 8px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-header.is-scrolled .language-select,
+.site-header.is-open .language-select {
+  background: rgba(248, 248, 246, 0.9);
+  color: var(--color-black);
+}
+
 .menu-toggle {
   width: 42px;
   height: 42px;
@@ -542,7 +568,7 @@ dd {
   }
 
   .guitar-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .form-grid {
