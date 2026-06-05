@@ -51,6 +51,16 @@ const translations = {
     "courses.title": "Tu Sonido Flamenco",
     "courses.text": "Si ya tocas guitarra, este es tu comienzo en el flamenco.",
     "courses.button": "Más información",
+    "metronome.title": "Metrónomo Flamenco",
+    "metronome.text": "Practica el compás flamenco con precisión desde tu celular.",
+    "metronome.priceLabel": "Precio",
+    "metronome.price": "$99 MXN",
+    "metronome.includesLabel": "Incluye",
+    "metronome.includes":
+      "Rumbas, Tangos, Bulerías, Alegrías, Soleá por Bulería, Seguiriyas, Fandangos y Sevillanas",
+    "metronome.button": "Comprar Metrónomo",
+    "metronome.note":
+      "Los alumnos del curso Tu Sonido Flamenco reciben la versión completa sin costo adicional.",
     "instruments.entryTitle": "Instrumentos",
     "instruments.entryText": "Instrumentos artesanales construidos por Miguel Huipe.",
     "instruments.entryCopy":
@@ -110,6 +120,16 @@ const translations = {
     "courses.title": "Tu Sonido Flamenco",
     "courses.text": "If you already play guitar, this is your beginning in flamenco.",
     "courses.button": "More information",
+    "metronome.title": "Flamenco Metronome",
+    "metronome.text": "Practice flamenco compás with precision from your phone.",
+    "metronome.priceLabel": "Price",
+    "metronome.price": "$99 MXN",
+    "metronome.includesLabel": "Includes",
+    "metronome.includes":
+      "Rumbas, Tangos, Bulerías, Alegrías, Soleá por Bulería, Seguiriyas, Fandangos and Sevillanas",
+    "metronome.button": "Buy Metronome",
+    "metronome.note":
+      "Students of Tu Sonido Flamenco receive the full version at no additional cost.",
     "instruments.entryTitle": "Instruments",
     "instruments.entryText": "Handcrafted instruments built by Miguel Huipe.",
     "instruments.entryCopy":
