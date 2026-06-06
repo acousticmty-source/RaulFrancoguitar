@@ -38,7 +38,6 @@ const translations = {
     "lessons.registrationNote":
       "Después de adquirir tu suscripción, recibirás instrucciones para completar tu registro y asignar horario.",
     "lessons.subscribe": "Adquirir suscripción",
-    "lessons.registration": "Completar registro",
     "faq.title": "Preguntas frecuentes",
     "faq.experienceQ": "¿Necesito experiencia previa?",
     "faq.experienceA": "No necesariamente. Las clases se adaptan al nivel y objetivo de cada alumno.",
@@ -118,7 +117,6 @@ const translations = {
     "lessons.registrationNote":
       "After purchasing your subscription, you will receive instructions to complete your registration and assign a schedule.",
     "lessons.subscribe": "Purchase subscription",
-    "lessons.registration": "Complete registration",
     "faq.title": "Frequently Asked Questions",
     "faq.experienceQ": "Do I need previous experience?",
     "faq.experienceA": "Not necessarily. Lessons adapt to each student's level and goals.",
