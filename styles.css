@@ -581,6 +581,103 @@ dd {
   }
 }
 
+@media (max-width: 520px) {
+  :root {
+    --container: min(100% - 28px, 1120px);
+    --header-height: 66px;
+  }
+
+  .site-header {
+    padding: 0 14px;
+  }
+
+  .brand {
+    font-size: 0.88rem;
+  }
+
+  .language-select {
+    max-width: 104px;
+    font-size: 0.66rem;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    min-height: 92svh;
+  }
+
+  .hero-content {
+    padding-bottom: 34px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.1rem, 16vw, 4.6rem);
+  }
+
+  h2 {
+    font-size: clamp(2.45rem, 12vw, 3.6rem);
+    overflow-wrap: anywhere;
+  }
+
+  .lead {
+    margin-top: 24px;
+    font-size: clamp(1.18rem, 6vw, 1.55rem);
+  }
+
+  .section {
+    padding: 86px 0;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+    padding-inline: 12px;
+    font-size: 0.74rem;
+  }
+
+  .action-row {
+    gap: 8px;
+  }
+
+  .button {
+    padding-inline: 15px;
+    font-size: 0.78rem;
+  }
+
+  .split {
+    gap: 34px;
+  }
+
+  dd {
+    font-size: clamp(1.18rem, 6vw, 1.55rem);
+  }
+
+  .quiet-copy {
+    font-size: clamp(1rem, 5vw, 1.22rem);
+  }
+
+  .course-media {
+    width: min(100%, 300px);
+  }
+
+  .contact-list a {
+    font-size: clamp(1.55rem, 11vw, 2.7rem);
+  }
+
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
