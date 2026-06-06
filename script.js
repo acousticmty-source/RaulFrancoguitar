@@ -53,12 +53,22 @@ const translations = {
     "courses.text": "Si ya tocas guitarra, este es tu comienzo en el flamenco.",
     "courses.button": "Más información",
     "metronome.title": "Metrónomo Flamenco",
-    "metronome.text": "Practica el compás flamenco con precisión desde tu celular.",
-    "metronome.priceLabel": "Precio",
-    "metronome.price": "$99 MXN",
+    "metronome.text":
+      "Practica el compás flamenco con precisión desde tu celular, ajustando los BPM a tu nivel y trabajando cada palo con una guía clara.",
+    "metronome.description":
+      "Una herramienta sencilla para estudiar pulso, velocidad y estabilidad. Puedes subir o bajar los BPM para practicar lento, acelerar progresivamente y sostener el compás con más control.",
+    "metronome.featuresLabel": "Funciones",
+    "metronome.features":
+      "Control de BPM, práctica progresiva y patrones pensados para compás flamenco.",
     "metronome.includesLabel": "Incluye",
-    "metronome.includes":
-      "Rumbas, Tangos, Bulerías, Alegrías, Soleá por Bulería, Seguiriyas, Fandangos y Sevillanas",
+    "metronome.rhythm.rumbas": "Rumbas",
+    "metronome.rhythm.tangos": "Tangos",
+    "metronome.rhythm.bulerias": "Bulerías",
+    "metronome.rhythm.alegrias": "Alegrías",
+    "metronome.rhythm.solea": "Soleá por Bulería",
+    "metronome.rhythm.seguiriyas": "Seguiriyas",
+    "metronome.rhythm.fandangos": "Fandangos",
+    "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Comprar Metrónomo",
     "metronome.note":
       "Los alumnos del curso Tu Sonido Flamenco reciben la versión completa sin costo adicional.",
@@ -123,12 +133,22 @@ const translations = {
     "courses.text": "If you already play guitar, this is your beginning in flamenco.",
     "courses.button": "More information",
     "metronome.title": "Flamenco Metronome",
-    "metronome.text": "Practice flamenco compás with precision from your phone.",
-    "metronome.priceLabel": "Price",
-    "metronome.price": "$99 MXN",
+    "metronome.text":
+      "Practice flamenco compás with precision from your phone, adjusting BPM to your level and working each style with a clear guide.",
+    "metronome.description":
+      "A simple tool for studying pulse, speed and stability. Raise or lower the BPM to practice slowly, build speed progressively and hold the compás with more control.",
+    "metronome.featuresLabel": "Features",
+    "metronome.features":
+      "BPM control, progressive practice and patterns designed for flamenco compás.",
     "metronome.includesLabel": "Includes",
-    "metronome.includes":
-      "Rumbas, Tangos, Bulerías, Alegrías, Soleá por Bulería, Seguiriyas, Fandangos and Sevillanas",
+    "metronome.rhythm.rumbas": "Rumbas",
+    "metronome.rhythm.tangos": "Tangos",
+    "metronome.rhythm.bulerias": "Bulerías",
+    "metronome.rhythm.alegrias": "Alegrías",
+    "metronome.rhythm.solea": "Soleá por Bulería",
+    "metronome.rhythm.seguiriyas": "Seguiriyas",
+    "metronome.rhythm.fandangos": "Fandangos",
+    "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Buy Metronome",
     "metronome.note":
       "Students of Tu Sonido Flamenco receive the full version at no additional cost.",
