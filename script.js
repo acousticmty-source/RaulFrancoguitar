@@ -69,8 +69,6 @@ const translations = {
     "metronome.rhythm.fandangos": "Fandangos",
     "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Comprar Metrónomo",
-    "metronome.note":
-      "Los alumnos del curso Tu Sonido Flamenco reciben la versión completa sin costo adicional.",
     "instruments.entryTitle": "Instrumentos",
     "instruments.entryText": "Instrumentos artesanales construidos por Miguel Huipe.",
     "instruments.entryCopy":
@@ -148,8 +146,6 @@ const translations = {
     "metronome.rhythm.fandangos": "Fandangos",
     "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Buy Metronome",
-    "metronome.note":
-      "Students of Tu Sonido Flamenco receive the full version at no additional cost.",
     "instruments.entryTitle": "Instruments",
     "instruments.entryText": "Handcrafted instruments built by Miguel Huipe.",
     "instruments.entryCopy":
