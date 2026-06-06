@@ -382,6 +382,18 @@ h2 {
   border: 1px solid var(--color-line);
 }
 
+.metronome-media {
+  width: min(100%, 420px);
+  margin: 36px 0 0;
+}
+
+.metronome-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-line);
+}
+
 .section-guitar-gallery {
   background: var(--color-white);
 }
@@ -452,6 +464,17 @@ dd {
   font-family: var(--font-serif);
   font-size: clamp(1.35rem, 5vw, 2rem);
   line-height: 1.2;
+}
+
+.rhythm-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.rhythm-list li {
+  padding-left: 4px;
 }
 
 .section-contact {
@@ -666,6 +689,11 @@ dd {
 
   .course-media {
     width: min(100%, 300px);
+  }
+
+  .metronome-media {
+    width: min(100%, 320px);
+    margin-top: 28px;
   }
 
   .contact-list a {
