@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/raul-franco-hands-hero.png" />
     <link rel="preload" href="assets/raul-franco-hands-hero.png" as="image" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260607" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -38,14 +38,12 @@
       </div>
 
       <nav class="site-nav" id="site-nav" aria-label="Menú principal">
-        <a href="#inicio" data-i18n="nav.home">Inicio</a>
-        <a href="#musica" data-i18n="nav.music">Música</a>
+        <a href="https://www.tiktok.com/@raulfrancoguitar" data-i18n="hero.music">Videos</a>
         <a href="#presentaciones-privadas" data-i18n="nav.bookings">Contrataciones</a>
         <a href="#clases" data-i18n="nav.lessons">Clases online</a>
-        <a href="#preguntas">FAQ</a>
         <a href="#curso" data-i18n="nav.courses">Cursos</a>
+        <a href="#metronomo-flamenco" data-i18n="hero.metronome">Metrónomo</a>
         <a href="#guitarras" data-i18n="nav.instruments">Instrumentos</a>
-        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
     </header>
 
@@ -97,24 +95,9 @@
         </div>
       </section>
 
-      <section class="section section-intro" id="musica">
-        <div class="section-inner reveal">
-          <p class="section-kicker">01</p>
-          <h2 data-i18n="music.title">Música</h2>
-          <div class="action-row">
-            <a
-              class="button"
-              href="#"
-            >
-              <span data-i18n="music.button">Videos</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="presentaciones-privadas">
         <div class="section-inner reveal">
-          <p class="section-kicker">02</p>
+          <p class="section-kicker">01</p>
           <h2 data-i18n="bookings.title">Contrataciones</h2>
           <p class="lead" data-i18n="bookings.text">
             Guitarra flamenca para eventos privados, restaurantes, experiencias gastronómicas,
@@ -122,10 +105,10 @@
           </p>
           <a
             class="button section-button"
-            href="https://talentumlive.my.canva.site/reserva-tu-experiencia-musical"
+            href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20me%20interesa%20informaci%C3%B3n%20para%20contratar%20el%20servicio%20de%20guitarra%20flamenca."
             rel="noopener"
           >
-            <span data-i18n="bookings.button">Reservar experiencia musical</span>
+            <span data-i18n="bookings.button">Solicitar información</span>
           </a>
         </div>
       </section>
@@ -133,7 +116,7 @@
       <section class="section section-muted" id="clases">
         <div class="section-inner split reveal">
           <div>
-            <p class="section-kicker">03</p>
+            <p class="section-kicker">02</p>
             <h2 data-i18n="lessons.title">Clases online</h2>
           </div>
           <div class="details-panel automation-panel" aria-label="Datos de formación">
@@ -153,11 +136,12 @@
             </dl>
             <div class="simple-agenda">
               <p data-i18n="lessons.note">
-                Puedes adquirir la suscripción y después completar tu registro.
+                Consulta disponibilidad antes de inscribirte.
               </p>
               <p data-i18n="lessons.registrationNote">
-                Después de adquirir tu suscripción, recibirás instrucciones para completar tu
-                registro y asignar horario.
+                Para cuidar los horarios disponibles, primero revisaremos contigo las opciones
+                actuales por WhatsApp. Podrás apartar tu horario de forma provisional por 24 horas.
+                Tu lugar quedará confirmado únicamente al completar tu inscripción.
               </p>
               <div class="action-row result-actions">
                 <a
@@ -175,7 +159,7 @@
 
       <section class="section section-faq" id="preguntas">
         <div class="section-inner reveal">
-          <p class="section-kicker">04</p>
+          <p class="section-kicker">03</p>
           <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
           <div class="faq-list">
             <details>
@@ -204,14 +188,16 @@
       <section class="section section-course" id="curso">
         <div class="section-inner split reveal">
           <div>
-            <p class="section-kicker">05</p>
+            <p class="section-kicker">04</p>
             <h2 data-i18n="courses.title">Tu Sonido Flamenco</h2>
             <p class="lead" data-i18n="courses.text">
-              Si ya tocas guitarra, este es tu comienzo en el flamenco.
+              Un curso para guitarristas que quieren entrar al lenguaje flamenco con orden,
+              musicalidad y sentido práctico. Trabaja compás, recursos de mano derecha,
+              acompañamiento y sonido desde una ruta clara, sin perder tu propia forma de tocar.
             </p>
             <a
               class="button"
-              href="#"
+              href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20quiero%20informaci%C3%B3n%20del%20curso%20Tu%20Sonido%20Flamenco."
               rel="noopener"
               data-integration="hotmart"
               aria-label="Conocer el curso, integración futura con Hotmart"
@@ -274,7 +260,7 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">
+            <a class="button" href="https://mpago.la/2azeBJU" rel="noopener">
               <span data-i18n="metronome.button">Comprar Metrónomo</span>
             </a>
           </div>
@@ -287,19 +273,21 @@
             <p class="section-kicker">06</p>
             <h2 data-i18n="instruments.entryTitle">Instrumentos</h2>
             <p class="lead" data-i18n="instruments.entryText">
-              Instrumentos artesanales construidos por Miguel Huipe.
+              Guitarras artesanales construidas por Miguel Huipe para quienes buscan un instrumento
+              con carácter, respuesta y una voz propia para el toque flamenco.
             </p>
           </div>
           <div class="details-panel">
             <p class="quiet-copy" data-i18n="instruments.entryCopy">
-              Cada instrumento se trabaja con atención al sonido, la comodidad y la respuesta del
-              toque flamenco.
+              Cada guitarra se trabaja con maderas seleccionadas, detalle de taller y atención a la
+              comodidad, la proyección y el equilibrio entre percusión, brillo y profundidad.
             </p>
             <a
               class="button section-button"
-              href="#guitarras-artesanales"
+              href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20guitarras%20artesanales."
+              rel="noopener"
             >
-              <span data-i18n="instruments.entryButton">Ver instrumentos</span>
+              <span data-i18n="instruments.entryButton">Solicitar información</span>
             </a>
           </div>
         </div>
@@ -310,7 +298,8 @@
           <p class="section-kicker">07</p>
           <h2 data-i18n="instruments.title">Instrumentos</h2>
           <p class="lead" data-i18n="instruments.text">
-            Instrumentos artesanales construidos por Miguel Huipe.
+            Guitarras artesanales construidas por Miguel Huipe, pensadas para respuesta, comodidad
+            y carácter flamenco.
           </p>
           <div class="guitar-gallery" aria-label="Galería de guitarras artesanales">
             <figure>
@@ -322,7 +311,7 @@
               <figcaption data-i18n="instruments.model1">Modelo 1</figcaption>
               <a
                 class="button section-button"
-                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20los%20instrumentos%20construidos%20por%20Miguel%20Huipe."
+                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20guitarras%20artesanales."
                 rel="noopener"
               >
                 <span data-i18n="instruments.info">Solicitar información</span>
@@ -337,7 +326,7 @@
               <figcaption data-i18n="instruments.model2">Modelo 2</figcaption>
               <a
                 class="button section-button"
-                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20los%20instrumentos%20construidos%20por%20Miguel%20Huipe."
+                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20guitarras%20artesanales."
                 rel="noopener"
               >
                 <span data-i18n="instruments.info">Solicitar información</span>
@@ -352,7 +341,7 @@
               <figcaption data-i18n="instruments.model3">Modelo 3</figcaption>
               <a
                 class="button section-button"
-                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20los%20instrumentos%20construidos%20por%20Miguel%20Huipe."
+                href="https://api.whatsapp.com/send?phone=528116355035&text=Hola%20Ra%C3%BAl%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20guitarras%20artesanales."
                 rel="noopener"
               >
                 <span data-i18n="instruments.info">Solicitar información</span>
@@ -404,7 +393,7 @@
       WhatsApp
     </a>
 
-    <script src="script.js?v=20260606"></script>
+    <script src="script.js?v=20260607"></script>
   </body>
 </html>
 

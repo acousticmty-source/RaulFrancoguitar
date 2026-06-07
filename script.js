@@ -25,7 +25,7 @@ const translations = {
     "bookings.title": "Contrataciones",
     "bookings.text":
       "Guitarra flamenca para eventos privados, restaurantes, experiencias gastronómicas, corporativos y celebraciones especiales.",
-    "bookings.button": "Reservar experiencia musical",
+    "bookings.button": "Solicitar información",
     "lessons.title": "Clases online",
     "lessons.sessionsLabel": "Sesiones",
     "lessons.sessionsValue": "4 sesiones mensuales",
@@ -33,9 +33,9 @@ const translations = {
     "lessons.durationValue": "Sesiones de una hora",
     "lessons.scheduleLabel": "Horarios",
     "lessons.scheduleValue": "Horarios matutinos",
-    "lessons.note": "Puedes adquirir la suscripción y después completar tu registro.",
+    "lessons.note": "Consulta disponibilidad antes de inscribirte.",
     "lessons.registrationNote":
-      "Después de adquirir tu suscripción, recibirás instrucciones para completar tu registro y asignar horario.",
+      "Para cuidar los horarios disponibles, primero revisaremos contigo las opciones actuales por WhatsApp. Podrás apartar tu horario de forma provisional por 24 horas. Tu lugar quedará confirmado únicamente al completar tu inscripción.",
     "lessons.subscribe": "Adquirir suscripción",
     "faq.title": "Preguntas frecuentes",
     "faq.experienceQ": "¿Necesito experiencia previa?",
@@ -48,7 +48,8 @@ const translations = {
     "faq.confirmA":
       "Al reservar en la agenda, Google Calendar confirma automáticamente el horario y envía los detalles de la cita.",
     "courses.title": "Tu Sonido Flamenco",
-    "courses.text": "Si ya tocas guitarra, este es tu comienzo en el flamenco.",
+    "courses.text":
+      "Un curso para guitarristas que quieren entrar al lenguaje flamenco con orden, musicalidad y sentido práctico. Trabaja compás, recursos de mano derecha, acompañamiento y sonido desde una ruta clara, sin perder tu propia forma de tocar.",
     "courses.button": "Más información",
     "metronome.title": "Metrónomo Flamenco",
     "metronome.text":
@@ -69,12 +70,14 @@ const translations = {
     "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Comprar Metrónomo",
     "instruments.entryTitle": "Instrumentos",
-    "instruments.entryText": "Instrumentos artesanales construidos por Miguel Huipe.",
+    "instruments.entryText":
+      "Guitarras artesanales construidas por Miguel Huipe para quienes buscan un instrumento con carácter, respuesta y una voz propia para el toque flamenco.",
     "instruments.entryCopy":
-      "Cada instrumento se trabaja con atención al sonido, la comodidad y la respuesta del toque flamenco.",
-    "instruments.entryButton": "Ver instrumentos",
+      "Cada guitarra se trabaja con maderas seleccionadas, detalle de taller y atención a la comodidad, la proyección y el equilibrio entre percusión, brillo y profundidad.",
+    "instruments.entryButton": "Solicitar información",
     "instruments.title": "Instrumentos",
-    "instruments.text": "Instrumentos artesanales construidos por Miguel Huipe.",
+    "instruments.text":
+      "Guitarras artesanales construidas por Miguel Huipe, pensadas para respuesta, comodidad y carácter flamenco.",
     "instruments.model1": "Modelo 1",
     "instruments.model2": "Modelo 2",
     "instruments.model3": "Modelo 3",
@@ -101,7 +104,7 @@ const translations = {
     "bookings.title": "Bookings",
     "bookings.text":
       "Flamenco guitar for private events, restaurants, culinary experiences, corporate gatherings and special celebrations.",
-    "bookings.button": "Reserve musical experience",
+    "bookings.button": "Request information",
     "lessons.title": "Lessons",
     "lessons.sessionsLabel": "Sessions",
     "lessons.sessionsValue": "4 monthly sessions",
@@ -109,9 +112,9 @@ const translations = {
     "lessons.durationValue": "One-hour sessions",
     "lessons.scheduleLabel": "Schedule",
     "lessons.scheduleValue": "Morning availability",
-    "lessons.note": "You can purchase the subscription and then complete your registration.",
+    "lessons.note": "Check availability before enrolling.",
     "lessons.registrationNote":
-      "After purchasing your subscription, you will receive instructions to complete your registration and assign a schedule.",
+      "To protect the available times, we will first review the current options with you on WhatsApp. You can hold your time provisionally for 24 hours. Your place is confirmed only after completing enrollment.",
     "lessons.subscribe": "Purchase subscription",
     "faq.title": "Frequently Asked Questions",
     "faq.experienceQ": "Do I need previous experience?",
@@ -124,7 +127,8 @@ const translations = {
     "faq.confirmA":
       "When booking through the calendar, Google Calendar automatically confirms the time and sends the appointment details.",
     "courses.title": "Tu Sonido Flamenco",
-    "courses.text": "If you already play guitar, this is your beginning in flamenco.",
+    "courses.text":
+      "A course for guitarists who want to enter the flamenco language with order, musicality and a practical path. Work on compás, right-hand resources, accompaniment and sound without losing your own way of playing.",
     "courses.button": "More information",
     "metronome.title": "Flamenco Metronome",
     "metronome.text":
@@ -145,12 +149,14 @@ const translations = {
     "metronome.rhythm.sevillanas": "Sevillanas",
     "metronome.button": "Buy Metronome",
     "instruments.entryTitle": "Instruments",
-    "instruments.entryText": "Handcrafted instruments built by Miguel Huipe.",
+    "instruments.entryText":
+      "Handcrafted guitars built by Miguel Huipe for players looking for character, response and a voice of their own for flamenco playing.",
     "instruments.entryCopy":
-      "Each instrument is built with attention to sound, comfort and the response needed for flamenco playing.",
-    "instruments.entryButton": "View instruments",
+      "Each guitar is shaped with selected woods, workshop detail and attention to comfort, projection and the balance between percussion, brightness and depth.",
+    "instruments.entryButton": "Request information",
     "instruments.title": "Instruments",
-    "instruments.text": "Handcrafted instruments built by Miguel Huipe.",
+    "instruments.text":
+      "Handcrafted guitars built by Miguel Huipe, designed for response, comfort and flamenco character.",
     "instruments.model1": "Model 1",
     "instruments.model2": "Model 2",
     "instruments.model3": "Model 3",
@@ -245,6 +251,22 @@ menuToggle.addEventListener("click", () => {
 
 nav.addEventListener("click", (event) => {
   if (event.target.matches("a")) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!document.body.classList.contains("menu-open")) {
+    return;
+  }
+
+  if (!header.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     closeMenu();
   }
 });

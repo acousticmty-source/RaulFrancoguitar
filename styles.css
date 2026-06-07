@@ -131,14 +131,6 @@ a {
   transition: transform 180ms ease;
 }
 
-.menu-toggle[aria-expanded="true"] span:nth-child(2) {
-  transform: translateY(3.5px) rotate(45deg);
-}
-
-.menu-toggle[aria-expanded="true"] span:nth-child(3) {
-  transform: translateY(-3.5px) rotate(-45deg);
-}
-
 .site-nav {
   position: fixed;
   inset: var(--header-height) 20px auto auto;
